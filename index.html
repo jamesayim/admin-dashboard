@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="logo">
+            <img src="/assets/icons8-dashboard-layout-48.png" aria-labelledby="logo" alt="logo">
+            <p style="font-weight: 700;">Dashboard</p>
+            </div>
+            <div class="home">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M28.447,11.583c-0.18,-1.417 -1.257,-2.871 -2.817,-3.797c-1.425,-0.832 -2.82,-1.674 -4.167,-2.487c-1.407,-0.85 -2.763,-1.667 -4.045,-2.41c-0.834,-0.484 -1.791,-0.49 -2.626,-0.02c-1.409,0.794 -2.904,1.682 -4.46,2.604c-1.275,0.758 -2.591,1.54 -3.941,2.318c-1.572,0.92 -2.66,2.38 -2.84,3.812c-0.479,3.857 -0.266,7.769 0.638,11.644c0.502,1.978 2.587,4.092 4.572,4.623c2.402,0.592 4.82,0.888 7.239,0.888c2.419,0 4.837,-0.296 7.239,-0.888c0.006,-0.001 0.013,-0.003 0.019,-0.005c1.967,-0.526 4.052,-2.641 4.558,-4.637c0.9,-3.862 1.113,-7.779 0.631,-11.645zM20.115,25.303c-0.107,0.681 -0.635,1.233 -1.321,1.302c-1.856,0.188 -3.714,0.189 -5.567,0.004c-0.686,-0.069 -1.215,-0.621 -1.322,-1.302c-0.325,-2.069 -0.24,-4.138 0.255,-6.208c0.154,-0.641 0.647,-1.154 1.267,-1.38c1.722,-0.628 3.443,-0.628 5.165,0c0.62,0.226 1.113,0.739 1.267,1.38c0.496,2.068 0.581,4.136 0.256,6.204z"></path></g></g>
+                    </svg>
+                <p>Home</p>
+            </div>
+            <div class="profile">
+                <img src="/assets/icons8-user-account-32.png" alt="profile">
+                <p>Profile</p>
+            </div>
+            <div class="message">
+                <img src="/assets/icons8-message-32.png">
+                <p>Message</p>
+            </div>
+            <div class="history">
+                <img src="/assets/icons8-history-32.png" alt="history">
+                <p>History</p>
+            </div>
+            <div class="tasks">
+                <img src="/assets/icons8-tasks-32.png" alt="tasks">
+                <p>Tasks</p>
+            </div>
+            <div class="communities">
+                <img src="/assets/icons8-group-32.png" alt="communities">
+                <p>Communities</p>
+            </div>
+            <div class="settings">
+                <img src="/assets/icons8-settings-32.png" alt="settings">
+                <p>Settings</p>
+            </div>
+            <div class="support">
+                <img src="/assets/icons8-help-32.png">
+                <p>Support</p>
+            </div>
+            <div class="privacy">
+                <img src="/assets/icons8-protect-64.png">
+                <p>Privacy</p>
+            </div>
+        </div>
+    <header class="top-header">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
+            <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+            </svg>
+        <input type="text">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+            <path d="M 23.277344 4.0175781 C 15.193866 4.3983176 9 11.343391 9 19.380859 L 9 26.648438 L 6.3496094 31.980469 A 1.50015 1.50015 0 0 0 6.3359375 32.009766 C 5.2696804 34.277268 6.9957076 37 9.5019531 37 L 18 37 C 18 40.295865 20.704135 43 24 43 C 27.295865 43 30 40.295865 30 37 L 38.496094 37 C 41.002339 37 42.730582 34.277829 41.664062 32.009766 A 1.50015 1.50015 0 0 0 41.650391 31.980469 L 39 26.648438 L 39 19 C 39 10.493798 31.863289 3.6133643 23.277344 4.0175781 z M 23.417969 7.0136719 C 30.338024 6.6878857 36 12.162202 36 19 L 36 27 A 1.50015 1.50015 0 0 0 36.15625 27.667969 L 38.949219 33.289062 C 39.128826 33.674017 38.921017 34 38.496094 34 L 9.5019531 34 C 9.077027 34 8.8709034 33.674574 9.0507812 33.289062 C 9.0507812 33.289062 9.0507812 33.287109 9.0507812 33.287109 L 11.84375 27.667969 A 1.50015 1.50015 0 0 0 12 27 L 12 19.380859 C 12 12.880328 16.979446 7.3169324 23.417969 7.0136719 z M 21 37 L 27 37 C 27 38.674135 25.674135 40 24 40 C 22.325865 40 21 38.674135 21 37 z"></path>
+            </svg>
+            <img width="40" height="40" src="https://img.icons8.com/officel/80/test-account.png" alt="test-account"/>
+            <p>James Ayim</p>
+    </header>
+    <header class="down-header">
+        <div class="greetings">
+        <img width="75" height="75" src="https://img.icons8.com/officel/80/test-account.png" alt="test-account"/>
+        <div>
+            <p>Hi there, </p>
+            <p>James Ayim (@james)</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Share</button>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="projects">
+            <div class="first project">
+                <p class="title">Super Cool Project</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+            <div class="second project">
+                <p class="title">Less Cool Project</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+            <div class="third project">
+                <p class="title">Impossible App</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+            <div class="four project">
+                <p class="title">Easy Peasy App</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+            <div class="five project">
+                <p class="title">Add Blocker</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+            <div class="six project">
+                <p class="title">Money Maker</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque eaque quae beatae voluptatum nam perferendis odio explicabo quia iste ipsam, numquam a dolore, aliquam sed. Dolores modi consectetur assumenda!</p>
+            </div>
+        </div>
+        <div class="announcements">
+            <div>
+                <p>Site maintenance</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quia obcaecati vitae deserunt magni enim iusto accusamus?</p>
+            </div>
+            <div>
+                <p>Community Share Day</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quia obcaecati vitae deserunt magni enim iusto accusamus?</p>
+            </div>
+            <div>
+                <p>Updated Privacy Policy</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quia obcaecati vitae deserunt magni enim iusto accusamus?</p>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="first user">
+                <img width="50" height="50" src="https://img.icons8.com/officel/80/circled-user-female-skin-type-1-2.png" alt="circled-user-female-skin-type-1-2"/>
+                <div class="usertext">
+                    <p class="username">@klara</p>
+                    <p>Super Cool Ally</p>
+                </div>
+            </div>
+            <div class="second user">
+                <img width="50" height="50" src="https://img.icons8.com/officel/80/user-male-skin-type-4.png" alt="user-male-skin-type-4"/>
+                <div class="usertext">
+                    <p class="username">@jim</p>
+                    <p>Peace Builder</p>
+                </div>
+            </div>
+            <div class="third user">
+                <img width="50" height="50" src="https://img.icons8.com/officel/80/circled-user-male-skin-type-5.png" alt="circled-user-male-skin-type-5"/>
+                <div class="usertext">
+                    <p class="username">@bigman</p>
+                    <p>Developing A Project</p>
+                </div>
+            </div>
+            <div class="fourth user">
+                <img width="50" height="50" src="https://img.icons8.com/officel/80/circled-user-male-skin-type-6.png" alt="circled-user-male-skin-type-6"/>
+                <div class="usertext">
+                    <p class="username">@blake</p>
+                    <p>Changing Lives</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
