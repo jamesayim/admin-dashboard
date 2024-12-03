@@ -32,14 +32,55 @@ html {
     background-color: rgb(36, 36, 36);
 }
 
+.sidebar .logo {
+    transform: scale(1.4);
+    position: relative;
+    top: 10px;
+    left: 33px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.logo p {
+    position: relative;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.sidebar .top-options {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 100px;
+    grid-template-rows: auto;
+    position: relative;
+    top: 180px;
+    transform: scale(.85);
+}
+
+.sidebar .down-options {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 100px;
+    grid-template-rows: auto;
+    position: relative;
+    top: 370px;
+    transform: scale(.85);
+}
+
+
 .sidebar img, .sidebar svg {
     width: 32px;
     height: 32px;
     margin-left: 30px;
     margin-right: 15px;
+    cursor: pointer;
 }
-.sidebar p {
-    margin-top: 6px;
+.icon p {
+    position: relative;
+    bottom: 30px ;
+    left: 80px;
+    cursor: pointer;
 }
 
 .sidebar > div {
@@ -63,6 +104,7 @@ html {
     border-radius: 15px;
     background-color: rgb(233, 233, 233);
     outline: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .top-header {
@@ -79,14 +121,17 @@ html {
 
 .top-header > svg:first-child {
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .top-header > svg:nth-child(3) {
-    margin-left: 150px;
+    margin-left: 120px;
+    cursor: pointer;
 }
 
 .top-header > img:nth-child(4) {
     align-self: center;
+    cursor: pointer;
 }
 
 .down-header {
@@ -192,21 +237,32 @@ button {
     grid-area: announce;
     display: grid;
     grid-template-columns: 1fr;
+    width: 300px;
     grid-auto-flow: row;
     border-radius: 10px;
     margin: 0 30px;
     padding-left: 30px;
     z-index: 1;
-    height: 360px;
+    height: 340px;
     background-color: white;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .announcements div {
     display: grid;
-    padding: 15px 0px;
+    padding: 20px 0px;
     grid-template-columns: auto;
     text-align: left;
+    width: 250px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(100, 100, 100, 0.5);
+    margin: 5px 0;
+    width: 240px;
 }
 
 .announcements div p:first-child {
@@ -214,12 +270,11 @@ button {
     font-size: .8rem;
 }
 .announcements div p:nth-child(2) {
-    font-size: .8rem;
-    width: 200px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow-wrap: break-word;
+    line-height: 1.5;
+    margin: 0;
+    font-size: .8rem;
+    color: rgb(100, 100, 100);
 }
 
 .trending {
@@ -231,8 +286,7 @@ button {
     border-radius: 10px;
     padding-left: 30px;
     height: 301px;
-    background-color: black;
-    color: white;
+    background-color: white;
     margin: 0 30px;
     position: relative;
     top: 190px;
@@ -246,10 +300,23 @@ button {
     padding: 10px;
 }
 
+.trending img {
+    position: relative;
+    bottom: 10px;
+}
+
 .usertext {
     position: relative;
     left: 60px;
-    bottom: 50px;
+    bottom: 55px;
     font-size: .9rem;
     width: max-content;
+}
+.usertext > p:last-child {
+    color: rgb(100, 100, 100);
+    font-weight: 600;
+}
+
+.username {
+    font-weight: bold;
 }
