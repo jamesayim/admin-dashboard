@@ -16,7 +16,7 @@ html {
 .wrapper {
     display: grid;
     grid-template-columns: 290px repeat(3, minmax(100px, 1fr));
-    grid-template-rows: 50px 100px repeat(4, auto);
+    grid-template-rows: 50px 100px repeat(5, auto);
     width: 100%;
     height: 100vh;
 }
@@ -179,6 +179,7 @@ html {
     grid-template-areas: 
     "projects projects announce"
     "projects projects ..."
+    "projects projects trending"
     "projects projects trending";
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(auto-fit, 100px);
@@ -281,7 +282,7 @@ hr {
     grid-area: trending;
     display: grid;
     grid-template-columns: 100px;
-    grid-template-rows: repeat(4, 65px);
+    grid-template-rows: repeat(7, 65px);
     grid-auto-flow: row;
     border-radius: 10px;
     padding-left: 30px;
@@ -289,7 +290,7 @@ hr {
     background-color: white;
     margin: 0 30px;
     position: relative;
-    top: 190px;
+    top: 95%;
     padding: 30px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 }
@@ -302,13 +303,13 @@ hr {
 
 .trending img {
     position: relative;
-    bottom: 10px;
+    bottom: 30%;
 }
 
 .usertext {
     position: relative;
     left: 60px;
-    bottom: 55px;
+    bottom: 170%;
     font-size: .9rem;
     width: max-content;
 }
@@ -319,4 +320,38 @@ hr {
 
 .username {
     font-weight: bold;
+}
+
+.head {
+    position: relative;
+    bottom: 55px;
+    font-size: 1.3rem;
+}
+
+.heading-text {
+    display: grid;
+    grid-template-areas: 
+    "projecthead projecthead announcehead"
+    "... ... announcehead"
+    "... ... trendinghead";
+    z-index: 1;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 195px);
+    position: absolute;
+    left: 24%;
+    top: 30%;
+    column-gap: 85%;
+}
+
+.heading-text .project-head {
+    grid-area: projecthead;
+    font-size: larger;
+}
+.heading-text .announce-head {
+    grid-area: announcehead;
+    font-size: larger;
+}
+.heading-text .trending-head {
+    grid-area: trendinghead;
+    font-size: larger;
 }
